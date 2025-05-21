@@ -59,24 +59,6 @@ $(function () {
     });
 });
 
-// hỗ trợ
-$(document).ready(function () {
-    $(".list-faq-v2 .item > .title-faq").on("click", function () {
-        if ($(this).hasClass("active")) {
-            $(this).removeClass("active");
-            $(this)
-                .siblings(".answer")
-                .slideUp(300);
-        } else {
-            $(".list-faq-v2 .item > .title-faq").removeClass("active");
-            $(this).addClass("active");
-            $(".answer").slideUp(300);
-            $(this)
-                .siblings(".answer")
-                .slideDown(300);
-        }
-    });
-});
  // js slide sản phẩm 5 cột
 const flashSaleSwiper = new Swiper(".product-swiper .swiper", {
     slidesPerView: 2,
@@ -96,4 +78,15 @@ const flashSaleSwiper = new Swiper(".product-swiper .swiper", {
             slidesPerView: 5,
         },
     },
+});
+
+$(document).ready(function () {
+    $('.toggle').on('click', function () {
+        const $panel = $(this).next('.panel');
+        $('.panel').not($panel).slideUp(); // Đóng các panel khác
+        $panel.stop(true, true).slideToggle(); // Mở/đóng panel hiện tại
+    });
+    $('.list-tab-menu .sub-menu').on('click', function () {
+        $(this).toggleClass('active');
+    });
 });
