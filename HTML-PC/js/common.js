@@ -8,7 +8,7 @@ $(document).ready(function() {
         event.preventDefault();
     });
 
-    $('.closePopup').click(function() {
+    $('.popup-close').click(function() {
         $(this).closest('.popup').fadeOut(200);
         $('body').removeClass('overflow-hidden'); // Cho phép cuộn lại
     });
@@ -81,12 +81,12 @@ const flashSaleSwiper = new Swiper(".product-swiper .swiper", {
 });
 
 $(document).ready(function () {
-    $('.toggle').on('click', function () {
-        const $panel = $(this).next('.panel');
-        $('.panel').not($panel).slideUp(); // Đóng các panel khác
-        $panel.stop(true, true).slideToggle(); // Mở/đóng panel hiện tại
-    });
-    $('.list-tab-menu .sub-menu').on('click', function () {
-        $(this).toggleClass('active');
-    });
+   $('.accordion-toggle').on('click', function () {
+    const $panel = $(this).next('.accordion-panel');
+    $('.accordion-panel').not($panel).slideUp();
+    $('.accordion-toggle').not(this).removeClass('active');
+    $(this).toggleClass('active');
+    $panel.stop(true, true).slideToggle();
+  });
+  
 });
