@@ -975,7 +975,6 @@
 
             @media (min-width:992px) {
                 .thumb.thumb-news {
-                    padding-bottom: 350px;
                 }
             }
 
@@ -1035,7 +1034,6 @@
 
             @media (min-width:992px) {
                 .thumb.thumb-news {
-                    padding-bottom: 150px;
                 }
             }
         }
@@ -1216,7 +1214,6 @@
 
                     @media (min-width:992px) {
                         .thumb.thumb-news {
-                            padding-bottom: 170px;
                         }
                     }
 
@@ -1302,7 +1299,7 @@
                     padding: 0;
                     margin-bottom: 15px;
                     background: none;
-
+                    box-shadow: none;
                     a {
                         display: flex;
 
@@ -1328,6 +1325,8 @@
                         align-items: center;
                         margin-top: 10px;
                         position: static;
+                        display: flex;
+                        gap: 5px;
                         .price-old {
                             margin: 0;
                             font-size: 13px;
@@ -1339,6 +1338,7 @@
                         .percent {
                             color: #2CA196;
                             font-size: 13px;
+                            display: inline-block;
                             border-radius: 4px;
                             padding: 0 4px;
                             background: #CEE8DF;
