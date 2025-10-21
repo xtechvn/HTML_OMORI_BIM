@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Omori</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <div class="logo">
+                        <img class="green" src="images/Logo.png" alt="" />
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="icofont-navigation-menu"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Về Omori</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Tã dán</a>
+                                <a class="dropdown-item" href="#">Tã quần</a>
+                                <a class="dropdown-item" href="#">Khăn ướt</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đại lý</a>
+                        </li>
+                    </ul>
+                    <a href="" class="btn btn-base">Đặt hàng ngay</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+    <ul class="social-fixed">
+        <li><a href=""><img src="images/cart.png" alt="" /> </a></li>
+        <li><a href=""><img src="images/fb.png" alt="" /></a></li>
+        <li><a href=""><img src="images/mess.png" alt="" /></a></li>
+        <li>
+            <a href="tel:036 5809 316" class="hotline">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.5253 4.30599C13.5508 4.21081 13.5947 4.12158 13.6547 4.04339C13.7147 3.9652 13.7894 3.8996 13.8748 3.85032C13.9601 3.80104 14.0543 3.76906 14.152 3.7562C14.2496 3.74334 14.3489 3.74985 14.4441 3.77537C15.8344 4.13813 17.103 4.86497 18.119 5.88103C19.1351 6.89708 19.8619 8.16562 20.2247 9.55599C20.2502 9.65116 20.2567 9.75042 20.2439 9.84811C20.231 9.94579 20.199 10.04 20.1497 10.1253C20.1005 10.2106 20.0349 10.2854 19.9567 10.3454C19.8785 10.4053 19.7893 10.4493 19.6941 10.4747C19.6307 10.4914 19.5655 10.4999 19.5 10.5001C19.3347 10.5001 19.1741 10.4455 19.043 10.3448C18.912 10.244 18.8179 10.1029 18.7753 9.94318C18.4795 8.80817 17.8863 7.77259 17.0569 6.9432C16.2275 6.11381 15.1919 5.52061 14.0569 5.22474C13.9616 5.19938 13.8723 5.15549 13.794 5.09558C13.7157 5.03566 13.65 4.9609 13.6006 4.87557C13.5513 4.79024 13.5192 4.69601 13.5063 4.59828C13.4933 4.50054 13.4998 4.40122 13.5253 4.30599ZM13.3069 8.22474C14.5997 8.56974 15.4303 9.40037 15.7753 10.6932C15.8179 10.8529 15.912 10.994 16.043 11.0948C16.1741 11.1955 16.3347 11.25 16.5 11.2501C16.5655 11.2499 16.6307 11.2414 16.6941 11.2247C16.7893 11.1993 16.8785 11.1553 16.9567 11.0954C17.0349 11.0354 17.1005 10.9606 17.1497 10.8753C17.199 10.79 17.231 10.6958 17.2439 10.5981C17.2567 10.5004 17.2502 10.4012 17.2247 10.306C16.7447 8.50974 15.4903 7.25537 13.6941 6.77537C13.5019 6.72402 13.2971 6.75113 13.1249 6.85073C12.9527 6.95033 12.8271 7.11426 12.7758 7.30646C12.7244 7.49866 12.7516 7.70338 12.8512 7.87559C12.9508 8.04781 13.1147 8.1734 13.3069 8.22474ZM20.9888 17.1638C20.8216 18.4341 20.1977 19.6002 19.2337 20.4442C18.2696 21.2882 17.0313 21.7523 15.75 21.7501C8.30626 21.7501 2.25001 15.6938 2.25001 8.25005C2.24771 6.96876 2.7119 5.73045 3.55588 4.76639C4.39986 3.80234 5.56592 3.17847 6.83626 3.0113C7.1575 2.97208 7.4828 3.0378 7.76362 3.19865C8.04444 3.35951 8.2657 3.60687 8.39438 3.9038L10.3744 8.32412V8.33537C10.4729 8.56267 10.5136 8.81083 10.4928 9.05769C10.472 9.30455 10.3904 9.54242 10.2553 9.75005C10.2384 9.77537 10.2206 9.7988 10.2019 9.82224L8.25001 12.136C8.9522 13.5629 10.4447 15.0422 11.8903 15.7463L14.1722 13.8047C14.1946 13.7859 14.2181 13.7684 14.2425 13.7522C14.45 13.6139 14.6887 13.5294 14.937 13.5065C15.1853 13.4836 15.4354 13.5229 15.6647 13.621L15.6769 13.6266L20.0934 15.6057C20.3909 15.7339 20.6389 15.955 20.8003 16.2358C20.9616 16.5167 21.0278 16.8422 20.9888 17.1638ZM19.5 16.9763C19.5 16.9763 19.4934 16.9763 19.4897 16.9763L15.0834 15.0029L12.8006 16.9444C12.7785 16.9632 12.7553 16.9807 12.7313 16.9969C12.5154 17.1409 12.2659 17.2265 12.0071 17.2452C11.7483 17.2639 11.489 17.2152 11.2547 17.1038C9.49876 16.2554 7.74845 14.5182 6.89907 12.781C6.7866 12.5484 6.73613 12.2906 6.75255 12.0327C6.76898 11.7749 6.85174 11.5256 6.99282 11.3091C7.00872 11.2837 7.02659 11.2596 7.04626 11.2369L9.00001 8.92037L7.03126 4.51412C7.03089 4.51038 7.03089 4.50661 7.03126 4.50287C6.12212 4.62146 5.28739 5.0674 4.68339 5.75716C4.0794 6.44693 3.74755 7.33322 3.75001 8.25005C3.75348 11.4316 5.01888 14.4818 7.26856 16.7315C9.51825 18.9812 12.5685 20.2466 15.75 20.2501C16.6663 20.2532 17.5523 19.9225 18.2425 19.3198C18.9327 18.7171 19.3797 17.8837 19.5 16.9754V16.9763Z"
+                        fill="#ffffff" />
+                </svg>
+
+                <span>036 5809 316</span>
+            </a>
+        </li>
+    </ul>
+    
+
+<!-- HOME -->
+
+<section class="section-banner">
+    <div class="banner-swiper">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href=""><img src="images/banner-home.jpg" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href=""><img src="images/banner-home.jpg" alt="" /></a>
+                </div>
+            </div>
+            <!-- Navigation -->
+            <div class="swiper-button-next">
+                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2.23021 0.96891L9.73021 8.46891C9.80001 8.53861 9.85531 8.62131 9.89301 8.71241C9.93081 8.80341 9.95021 8.90101 9.95021 8.99961C9.95021 9.09811 9.93081 9.19571 9.89301 9.28681C9.85531 9.37781 9.80001 9.46051 9.73021 9.53021L2.23021 17.0302C2.08951 17.1709 1.89866 17.25 1.69963 17.25C1.50061 17.25 1.30974 17.1709 1.16901 17.0302C1.02828 16.8895 0.949219 16.6986 0.949219 16.4996C0.949219 16.3006 1.02828 16.1097 1.16901 15.969L8.13931 8.99961L1.16901 2.03021C1.09933 1.96051 1.04405 1.87781 1.00634 1.78671C0.968629 1.69571 0.949219 1.59811 0.949219 1.49961C0.949219 1.40101 0.968629 1.30341 1.00634 1.21241C1.04405 1.12141 1.09933 1.03861 1.16901 0.96891C1.23869 0.89931 1.32142 0.844011 1.41246 0.806311C1.50351 0.768611 1.60109 0.74921 1.69963 0.74921C1.79818 0.74921 1.89576 0.768611 1.98681 0.806311C2.07781 0.844011 2.16061 0.89931 2.23021 0.96891Z"
+                        fill="#8E6040" />
+                </svg>
+
+            </div>
+            <div class="swiper-button-prev">
+                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.76979 17.0311L0.269792 9.53109C0.199992 9.46139 0.144692 9.37869 0.106992 9.28759C0.0691918 9.19659 0.0497904 9.09899 0.0497904 9.00039C0.0497904 8.90189 0.0691918 8.80429 0.106992 8.71319C0.144692 8.62219 0.199992 8.53949 0.269792 8.46979L7.76979 0.96979C7.91049 0.82906 8.10134 0.75 8.30037 0.75C8.49939 0.75 8.69026 0.82906 8.83099 0.96979C8.97172 1.11052 9.05078 1.3014 9.05078 1.50042C9.05078 1.69944 8.97172 1.89031 8.83099 2.03104L1.86069 9.00039L8.83099 15.9698C8.90067 16.0395 8.95595 16.1222 8.99366 16.2133C9.03137 16.3043 9.05078 16.4019 9.05078 16.5004C9.05078 16.599 9.03137 16.6966 8.99366 16.7876C8.95595 16.8786 8.90067 16.9614 8.83099 17.0311C8.76131 17.1007 8.67858 17.156 8.58754 17.1937C8.49649 17.2314 8.39891 17.2508 8.30037 17.2508C8.20182 17.2508 8.10424 17.2314 8.01319 17.1937C7.92219 17.156 7.83939 17.1007 7.76979 17.0311Z"
+                        fill="#8E6040" />
+                </svg>
+
+            </div>
+        </div>
+    </div>
+    <div class="box-btn">
+        <a href="" class="btn btn-green btn-icon">Đặt hàng ngay
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M9.75 20.25C9.75 20.5467 9.66203 20.8367 9.4972 21.0834C9.33238 21.33 9.09811 21.5223 8.82403 21.6358C8.54994 21.7494 8.24834 21.7791 7.95736 21.7212C7.66639 21.6633 7.39912 21.5204 7.18934 21.3107C6.97956 21.1009 6.8367 20.8336 6.77882 20.5426C6.72094 20.2517 6.75065 19.9501 6.86418 19.676C6.97771 19.4019 7.16997 19.1676 7.41665 19.0028C7.66332 18.838 7.95333 18.75 8.25 18.75C8.64782 18.75 9.02936 18.908 9.31066 19.1893C9.59196 19.4706 9.75 19.8522 9.75 20.25ZM18 18.75C17.7033 18.75 17.4133 18.838 17.1666 19.0028C16.92 19.1676 16.7277 19.4019 16.6142 19.676C16.5006 19.9501 16.4709 20.2517 16.5288 20.5426C16.5867 20.8336 16.7296 21.1009 16.9393 21.3107C17.1491 21.5204 17.4164 21.6633 17.7074 21.7212C17.9983 21.7791 18.2999 21.7494 18.574 21.6358C18.8481 21.5223 19.0824 21.33 19.2472 21.0834C19.412 20.8367 19.5 20.5467 19.5 20.25C19.5 19.8522 19.342 19.4706 19.0607 19.1893C18.7794 18.908 18.3978 18.75 18 18.75ZM22.4728 6.95062L20.0691 15.6019C19.9369 16.0745 19.6542 16.4911 19.2639 16.7885C18.8736 17.0859 18.397 17.2479 17.9062 17.25H8.64C8.14784 17.2498 7.66926 17.0886 7.27725 16.791C6.88523 16.4935 6.6013 16.0758 6.46875 15.6019L3.18 3.75H1.5C1.30109 3.75 1.11032 3.67098 0.96967 3.53033C0.829018 3.38968 0.75 3.19891 0.75 3C0.75 2.80109 0.829018 2.61032 0.96967 2.46967C1.11032 2.32902 1.30109 2.25 1.5 2.25H3.75C3.91397 2.24997 4.07343 2.30367 4.20398 2.40289C4.33452 2.50211 4.42895 2.64138 4.47281 2.79938L5.36156 6H21.75C21.8656 5.99998 21.9797 6.02669 22.0833 6.07805C22.1869 6.1294 22.2772 6.20401 22.3472 6.29605C22.4171 6.38809 22.4649 6.49506 22.4867 6.60861C22.5085 6.72216 22.5037 6.83922 22.4728 6.95062ZM20.7628 7.5H5.77875L7.91719 15.2006C7.96105 15.3586 8.05548 15.4979 8.18602 15.5971C8.31657 15.6963 8.47603 15.75 8.64 15.75H17.9062C18.0702 15.75 18.2297 15.6963 18.3602 15.5971C18.4908 15.4979 18.5852 15.3586 18.6291 15.2006L20.7628 7.5Z"
+                    fill="white" />
+            </svg>
+
+        </a>
+        <a href="" class="btn btn-white btn-icon">Đăng kí làm đại lý
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M17.0306 12.5306L9.53055 20.0306C9.46087 20.1002 9.37815 20.1555 9.2871 20.1932C9.19606 20.2309 9.09847 20.2503 8.99993 20.2503C8.90138 20.2503 8.8038 20.2309 8.71276 20.1932C8.62171 20.1555 8.53899 20.1002 8.4693 20.0306C8.39962 19.9609 8.34435 19.8781 8.30663 19.7871C8.26892 19.6961 8.24951 19.5985 8.24951 19.4999C8.24951 19.4014 8.26892 19.3038 8.30663 19.2128C8.34435 19.1217 8.39962 19.039 8.4693 18.9693L15.4396 11.9999L8.4693 5.03055C8.32857 4.88982 8.24951 4.69895 8.24951 4.49993C8.24951 4.30091 8.32857 4.11003 8.4693 3.9693C8.61003 3.82857 8.80091 3.74951 8.99993 3.74951C9.19895 3.74951 9.38982 3.82857 9.53055 3.9693L17.0306 11.4693C17.1003 11.539 17.1556 11.6217 17.1933 11.7127C17.2311 11.8038 17.2505 11.9014 17.2505 11.9999C17.2505 12.0985 17.2311 12.1961 17.1933 12.2871C17.1556 12.3782 17.1003 12.4609 17.0306 12.5306Z"
+                    fill="#B37B54" />
+            </svg>
+        </a>
+    </div>
+</section>
+
+<section class="omori-section">
+    <div class="container">
+        <div class="star star-1">
+            <svg width="44" height="46" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M25.0529 1.58415C26.7726 0.0709496 29.4853 1.06089 29.8261 3.32608L31.3963 13.7599C31.5256 14.6195 32.0346 15.3754 32.7824 15.8187L41.8591 21.1985C43.8297 22.3664 43.7265 25.2522 41.6775 26.2764L32.2396 30.9939C31.462 31.3826 30.9003 32.1002 30.7099 32.9484L28.3982 43.2434C27.8964 45.4784 25.1199 46.272 23.5127 44.6398L16.1096 37.1215C15.4996 36.5021 14.6436 36.1897 13.778 36.2707L3.27264 37.2535C0.991911 37.4669 -0.620803 35.0715 0.434863 33.0386L5.29743 23.6746C5.69805 22.9031 5.73063 21.9924 5.38615 21.1942L1.2051 11.5067C0.297391 9.40353 2.07714 7.12954 4.3368 7.50533L14.7451 9.23626C15.6026 9.37887 16.4789 9.12843 17.1315 8.55418L25.0529 1.58415Z"
+                    fill="#EBCCAD" fill-opacity="0.4" />
+            </svg>
+        </div>
+
+        <div class="star star-2">
+            <svg width="44" height="46" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M25.0529 1.58415C26.7726 0.0709496 29.4853 1.06089 29.8261 3.32608L31.3963 13.7599C31.5256 14.6195 32.0346 15.3754 32.7824 15.8187L41.8591 21.1985C43.8297 22.3664 43.7265 25.2522 41.6775 26.2764L32.2396 30.9939C31.462 31.3826 30.9003 32.1002 30.7099 32.9484L28.3982 43.2434C27.8964 45.4784 25.1199 46.272 23.5127 44.6398L16.1096 37.1215C15.4996 36.5021 14.6436 36.1897 13.778 36.2707L3.27264 37.2535C0.991911 37.4669 -0.620803 35.0715 0.434863 33.0386L5.29743 23.6746C5.69805 22.9031 5.73063 21.9924 5.38615 21.1942L1.2051 11.5067C0.297391 9.40353 2.07714 7.12954 4.3368 7.50533L14.7451 9.23626C15.6026 9.37887 16.4789 9.12843 17.1315 8.55418L25.0529 1.58415Z"
+                    fill="#EBCCAD" fill-opacity="0.4" />
+            </svg>
+        </div>
+
+        <div class="star star-3">
+            <svg width="44" height="46" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M25.0529 1.58415C26.7726 0.0709496 29.4853 1.06089 29.8261 3.32608L31.3963 13.7599C31.5256 14.6195 32.0346 15.3754 32.7824 15.8187L41.8591 21.1985C43.8297 22.3664 43.7265 25.2522 41.6775 26.2764L32.2396 30.9939C31.462 31.3826 30.9003 32.1002 30.7099 32.9484L28.3982 43.2434C27.8964 45.4784 25.1199 46.272 23.5127 44.6398L16.1096 37.1215C15.4996 36.5021 14.6436 36.1897 13.778 36.2707L3.27264 37.2535C0.991911 37.4669 -0.620803 35.0715 0.434863 33.0386L5.29743 23.6746C5.69805 22.9031 5.73063 21.9924 5.38615 21.1942L1.2051 11.5067C0.297391 9.40353 2.07714 7.12954 4.3368 7.50533L14.7451 9.23626C15.6026 9.37887 16.4789 9.12843 17.1315 8.55418L25.0529 1.58415Z"
+                    fill="#EBCCAD" fill-opacity="0.4" />
+            </svg>
+        </div>
+
+        <!-- content -->
+        <div class="omori-grid">
+            <div class="omori-item">
+                <a href="">
+                    <img src="images/item1.png" alt="OMORI Luxury">
+                    <p>OMORI Luxury</p>
+                </a>
+            </div>
+            <div class="omori-item">
+                <a href="">
+                    <img src="images/item2.png" alt="OMORI Luxury">
+                    <p>OMORI Luxury</p>
+                </a>
+            </div>
+            <div class="omori-item">
+                <a href="">
+                    <img src="images/item3.png" alt="OMORI Luxury">
+                    <p>OMORI Luxury</p>
+                </a>
+            </div>
+            <div class="omori-item">
+                <a href="">
+                    <img src="images/item4.png" alt="OMORI Luxury">
+                    <p>OMORI Luxury</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="product-section">
+    <div class="container">
+        <h3 class="title">Sản phẩm bán chạy nhất</h3>
+        <div class="list-product">
+            <div class="item-product">
+                <a href="#">
+                    <div class="tag">-50%</div>
+                    <div class="product-image">
+                        <img src="images/product.png" alt="Sản phẩm">
+                    </div>
+                    <p class="product-title">Tã quần OMORI Balance siêu mềm mại</p>
+                    <div class="product-price-info">
+                        <div class="price-details">
+                            <div class="price">185.000 đ</div>
+                            <div class="old-price">215.000 đ</div>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-base">Mua ngay</a>
+
+                </a>
+            </div>
+            <div class="item-product">
+                <a href="#">
+                    <div class="tag">-50%</div>
+                    <div class="product-image">
+                        <img src="images/product.png" alt="Sản phẩm">
+                    </div>
+                    <p class="product-title">Tã quần OMORI Balance siêu mềm mại</p>
+                    <div class="product-price-info">
+                        <div class="price-details">
+                            <div class="price">185.000 đ</div>
+                            <div class="old-price">215.000 đ</div>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-base">Mua ngay</a>
+                </a>
+            </div>
+            <div class="item-product">
+                <a href="#">
+                    <div class="tag">-50%</div>
+                    <div class="product-image">
+                        <img src="images/product.png" alt="Sản phẩm">
+                    </div>
+                    <p class="product-title">Tã quần OMORI Balance siêu mềm mại</p>
+                    <div class="product-price-info">
+                        <div class="price-details">
+                            <div class="price">185.000 đ</div>
+                            <div class="old-price">215.000 đ</div>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-base">Mua ngay</a>
+
+                </a>
+            </div>
+            <div class="item-product">
+                <a href="#">
+                    <div class="tag">-50%</div>
+                    <div class="product-image">
+                        <img src="images/product.png" alt="Sản phẩm">
+                    </div>
+                    <p class="product-title">Tã quần OMORI Balance siêu mềm mại</p>
+                    <div class="product-price-info">
+                        <div class="price-details">
+                            <div class="price">185.000 đ</div>
+                            <div class="old-price">215.000 đ</div>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-base">Mua ngay</a>
+
+                </a>
+            </div>
+            <div class="item-product">
+                <a href="#">
+                    <div class="tag">-50%</div>
+                    <div class="product-image">
+                        <img src="images/product.png" alt="Sản phẩm">
+                    </div>
+                    <p class="product-title">Tã quần OMORI Balance siêu mềm mại</p>
+                    <div class="product-price-info">
+                        <div class="price-details">
+                            <div class="price">185.000 đ</div>
+                            <div class="old-price">215.000 đ</div>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-base">Mua ngay</a>
+
+                </a>
+            </div>
+            <div class="item-product">
+                <a href="#">
+                    <div class="tag">-50%</div>
+                    <div class="product-image">
+                        <img src="images/product.png" alt="Sản phẩm">
+                    </div>
+                    <p class="product-title">Tã quần OMORI Balance siêu mềm mại</p>
+                    <div class="product-price-info">
+                        <div class="price-details">
+                            <div class="price">185.000 đ</div>
+                            <div class="old-price">215.000 đ</div>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-base">Mua ngay</a>
+
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="milk-banner">
+    <div class="flower-bg"></div>
+    <div class="container">
+
+        <div class="swiper milk-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-inner">
+                        <img src="images/banner-home.jpg" alt="Sữa thoải mái của bé">
+                        <a href="#" class="btn btn-base">Mua ngay</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-inner">
+                        <img src="images/banner-home.jpg" alt="Sản phẩm chất lượng">
+                        <a href="#" class="btn btn-base">Mua ngay</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-inner">
+                        <img src="images/banner-home.jpg" alt="Lựa chọn của mẹ">
+                        <a href="#" class="btn btn-base">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="milk-info">
+            <div class="text">
+                <h3>Sữa thoải mái của bé, sự lựa chọn của mẹ!</h3>
+                <p>Click để vào Shopee mua hàng</p>
+                <a href="#" class="btn btn-base">Mua ngay</a>
+            </div>
+            <div class="icon-shoppe">
+                <img src="images/shopee-icon.png" alt="Shopee">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="awards-slider">
+    <div class="container">
+        <div class="box-slide">
+            <div class="swiper awardsSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/award.png" alt="Award 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/award.png" alt="Award 2" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/award.png" alt="Award 3" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/award.png" alt="Award 3" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/award.png" alt="Award 4" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/award.png" alt="Award 5" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/award.png" alt="Award 6" />
+                    </div>
+                </div>
+
+            </div>
+            <!-- Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+<section class="about-omori">
+    <div class="container">
+        <div class="about-wrap">
+            <div class="about-image">
+                <img src="images/img1.jpg" alt="Về OMORI" />
+            </div>
+
+            <div class="about-content">
+                <div class="decor-star">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.67755 1.71666C6.87875 0.72848 8.09382 0.354718 8.81562 1.05897L12.1403 4.30288C12.4143 4.57014 12.7938 4.7001 13.1741 4.65684L17.7894 4.13168C18.7914 4.01766 19.5223 5.05776 19.0756 5.96186L17.0178 10.1263C16.8483 10.4694 16.842 10.8705 17.0006 11.2188L18.9263 15.4459C19.3444 16.3636 18.581 17.3802 17.5831 17.2347L12.9867 16.5646C12.608 16.5094 12.2245 16.6273 11.9423 16.8858L8.51713 20.0235C7.77352 20.7047 6.57082 20.2929 6.40082 19.2989L5.61778 14.7203C5.55326 14.343 5.32259 14.0148 4.98953 13.8263L0.946988 11.5383C0.0693499 11.0416 0.0893576 9.77054 0.982193 9.30169L5.09473 7.1421C5.43356 6.96418 5.67445 6.64336 5.7508 6.26835L6.67755 1.71666Z"
+                            fill="#EBCCAD" />
+                    </svg>
+
+                    <svg width="44" height="46" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M25.0529 1.58415C26.7726 0.0709496 29.4853 1.06089 29.8261 3.32608L31.3963 13.7599C31.5256 14.6195 32.0346 15.3754 32.7824 15.8187L41.8591 21.1985C43.8297 22.3664 43.7265 25.2522 41.6775 26.2764L32.2396 30.9939C31.462 31.3826 30.9003 32.1002 30.7099 32.9484L28.3982 43.2434C27.8964 45.4784 25.1199 46.272 23.5127 44.6398L16.1096 37.1215C15.4996 36.5021 14.6436 36.1897 13.778 36.2707L3.27264 37.2535C0.991911 37.4669 -0.620803 35.0715 0.434863 33.0386L5.29743 23.6746C5.69805 22.9031 5.73063 21.9924 5.38615 21.1942L1.2051 11.5067C0.297391 9.40353 2.07714 7.12954 4.3368 7.50533L14.7451 9.23626C15.6026 9.37887 16.4789 9.12843 17.1315 8.55418L25.0529 1.58415Z"
+                            fill="#EBCCAD" />
+                    </svg>
+                </div>
+
+                <h2>Về OMORI</h2>
+                <p>Được thành lập vào năm 2013, OMORI được tạo ra với cái tên lấy cảm hứng từ cụm từ “I will be”, phản
+                    ánh tươn̛ lai vô hạn của mẹ và bé. Tầm nhìn của chúng tôi là định nghĩa lại sự xuất sắc trong việc
+                    chăm sóc em bé, cung cấp các sản phẩm thiết yếu chất lượng cao, an toàn và được thiết kế chu đáo,
+                    nuôi dưỡng cả sự thoải mái và tự tin.</p>
+
+                <a href="#" class="btn-primary">Tìm hiểu thêm</a>
+            </div>
+        </div>
+
+        <div class="decor-flower"></div>
+    </div>
+</section>
+
+<section class="section-news-home">
+    <div class="container">
+        <div class="head-more">
+            <h2 class="title-section">Bài đăng trên blog</h2>
+            <a href="">Xem thêm</a>
+        </div>
+        <div class="grid grid-3">
+            <div class="item-news">
+                <div class="box-news">
+                    <div class="thumb-art">
+                        <div class="thumb thumb-news">
+                            <a href=""><img src="images/banner.jpg" alt="" /> </a>
+                        </div>
+                    </div>
+
+                    <h2 class="title-news">
+                        <a href="">Top những đồ chơi cho trẻ 7 tháng tuổi hữu ích nhất</a>
+                    </h2>
+                    <p class="description">Đồ chơi cho bé không chỉ là một phương tiện giải trí, mà còn là
+                        công cụ hỗ trợ phát triển toàn diện cho bé.Hulo Toys cung cấp đa dạng các loại đồ
+                        chơi như đồ chơi nhựa, lego, đồ chơi lắp ráp, đồ chơi điều khiển từ xa, và đồ chơi
+                        nhập vai...</p>
+                    <a href="" class="btn btn-base">Đọc tiếp</a>
+                </div>
+            </div>
+            <div class="item-news">
+                <div class="box-news">
+                    <div class="thumb-art">
+                        <div class="thumb thumb-news">
+                            <a href=""><img src="images/banner.jpg" alt="" /> </a>
+                        </div>
+                    </div>
+
+                    <h2 class="title-news">
+                        <a href="">Top những đồ chơi cho trẻ 7 tháng tuổi hữu ích nhất</a>
+                    </h2>
+                    <p class="description">Đồ chơi cho bé không chỉ là một phương tiện giải trí, mà còn là
+                        công cụ hỗ trợ phát triển toàn diện cho bé.Hulo Toys cung cấp đa dạng các loại đồ
+                        chơi như đồ chơi nhựa, lego, đồ chơi lắp ráp, đồ chơi điều khiển từ xa, và đồ chơi
+                        nhập vai...</p>
+                    <a href="" class="btn btn-base">Đọc tiếp</a>
+                </div>
+            </div>
+            <div class="item-news">
+                <div class="box-news">
+                    <div class="thumb-art">
+                        <div class="thumb thumb-news">
+                            <a href=""><img src="images/banner.jpg" alt="" /> </a>
+                        </div>
+                    </div>
+
+                    <h2 class="title-news">
+                        <a href="">Top những đồ chơi cho trẻ 7 tháng tuổi hữu ích nhất</a>
+                    </h2>
+                    <p class="description">Đồ chơi cho bé không chỉ là một phương tiện giải trí, mà còn là
+                        công cụ hỗ trợ phát triển toàn diện cho bé.Hulo Toys cung cấp đa dạng các loại đồ
+                        chơi như đồ chơi nhựa, lego, đồ chơi lắp ráp, đồ chơi điều khiển từ xa, và đồ chơi
+                        nhập vai...</p>
+                    <a href="" class="btn btn-base">Đọc tiếp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END HOME -->
+
+
+
+    <!-- Footer Start-->
+    <footer class="footer">
+        <div class="container">
+            <div class="wrap-ft">
+                <div class="left-ft">
+                    <a href="#">
+                        <div class="logo">
+                            <img class="green" src="images/Logo.png" alt="" />
+                        </div>
+                    </a>
+                    <p>Công ty TNHH Quốc tế Happy Kids</p>
+                    <ul class="grid-address">
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.5253 4.30599C13.5508 4.21081 13.5947 4.12158 13.6547 4.04339C13.7147 3.9652 13.7894 3.8996 13.8748 3.85032C13.9601 3.80104 14.0543 3.76906 14.152 3.7562C14.2496 3.74334 14.3489 3.74985 14.4441 3.77537C15.8344 4.13813 17.103 4.86497 18.119 5.88103C19.1351 6.89708 19.8619 8.16562 20.2247 9.55599C20.2502 9.65116 20.2567 9.75042 20.2439 9.84811C20.231 9.94579 20.199 10.04 20.1497 10.1253C20.1005 10.2106 20.0349 10.2854 19.9567 10.3454C19.8785 10.4053 19.7893 10.4493 19.6941 10.4747C19.6307 10.4914 19.5655 10.4999 19.5 10.5001C19.3347 10.5001 19.1741 10.4455 19.043 10.3448C18.912 10.244 18.8179 10.1029 18.7753 9.94318C18.4795 8.80817 17.8863 7.77259 17.0569 6.9432C16.2275 6.11381 15.1919 5.52061 14.0569 5.22474C13.9616 5.19938 13.8723 5.15549 13.794 5.09558C13.7157 5.03566 13.65 4.9609 13.6006 4.87557C13.5513 4.79024 13.5192 4.69601 13.5063 4.59828C13.4933 4.50054 13.4998 4.40122 13.5253 4.30599ZM13.3069 8.22474C14.5997 8.56974 15.4303 9.40037 15.7753 10.6932C15.8179 10.8529 15.912 10.994 16.043 11.0948C16.1741 11.1955 16.3347 11.25 16.5 11.2501C16.5655 11.2499 16.6307 11.2414 16.6941 11.2247C16.7893 11.1993 16.8785 11.1553 16.9567 11.0954C17.0349 11.0354 17.1005 10.9606 17.1497 10.8753C17.199 10.79 17.231 10.6958 17.2439 10.5981C17.2567 10.5004 17.2502 10.4012 17.2247 10.306C16.7447 8.50974 15.4903 7.25537 13.6941 6.77537C13.5019 6.72402 13.2971 6.75113 13.1249 6.85073C12.9527 6.95033 12.8271 7.11426 12.7758 7.30646C12.7244 7.49866 12.7516 7.70338 12.8512 7.87559C12.9508 8.04781 13.1147 8.1734 13.3069 8.22474ZM20.9888 17.1638C20.8216 18.4341 20.1977 19.6002 19.2337 20.4442C18.2696 21.2882 17.0313 21.7523 15.75 21.7501C8.30626 21.7501 2.25001 15.6938 2.25001 8.25005C2.24771 6.96876 2.7119 5.73045 3.55588 4.76639C4.39986 3.80234 5.56592 3.17847 6.83626 3.0113C7.1575 2.97208 7.4828 3.0378 7.76362 3.19865C8.04444 3.35951 8.2657 3.60687 8.39438 3.9038L10.3744 8.32412V8.33537C10.4729 8.56267 10.5136 8.81083 10.4928 9.05769C10.472 9.30455 10.3904 9.54242 10.2553 9.75005C10.2384 9.77537 10.2206 9.7988 10.2019 9.82224L8.25001 12.136C8.9522 13.5629 10.4447 15.0422 11.8903 15.7463L14.1722 13.8047C14.1946 13.7859 14.2181 13.7684 14.2425 13.7522C14.45 13.6139 14.6887 13.5294 14.937 13.5065C15.1853 13.4836 15.4354 13.5229 15.6647 13.621L15.6769 13.6266L20.0934 15.6057C20.3909 15.7339 20.6389 15.955 20.8003 16.2358C20.9616 16.5167 21.0278 16.8422 20.9888 17.1638ZM19.5 16.9763C19.5 16.9763 19.4934 16.9763 19.4897 16.9763L15.0834 15.0029L12.8006 16.9444C12.7785 16.9632 12.7553 16.9807 12.7313 16.9969C12.5154 17.1409 12.2659 17.2265 12.0071 17.2452C11.7483 17.2639 11.489 17.2152 11.2547 17.1038C9.49876 16.2554 7.74845 14.5182 6.89907 12.781C6.7866 12.5484 6.73613 12.2906 6.75255 12.0327C6.76898 11.7749 6.85174 11.5256 6.99282 11.3091C7.00872 11.2837 7.02659 11.2596 7.04626 11.2369L9.00001 8.92037L7.03126 4.51412C7.03089 4.51038 7.03089 4.50661 7.03126 4.50287C6.12212 4.62146 5.28739 5.0674 4.68339 5.75716C4.0794 6.44693 3.74755 7.33322 3.75001 8.25005C3.75348 11.4316 5.01888 14.4818 7.26856 16.7315C9.51825 18.9812 12.5685 20.2466 15.75 20.2501C16.6663 20.2532 17.5523 19.9225 18.2425 19.3198C18.9327 18.7171 19.3797 17.8837 19.5 16.9754V16.9763Z"
+                                    fill="#033256" />
+                            </svg>
+                            036 5809 316
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M21 4.5H3C2.80109 4.5 2.61032 4.57902 2.46967 4.71967C2.32902 4.86032 2.25 5.05109 2.25 5.25V18C2.25 18.3978 2.40804 18.7794 2.68934 19.0607C2.97064 19.342 3.35218 19.5 3.75 19.5H20.25C20.6478 19.5 21.0294 19.342 21.3107 19.0607C21.592 18.7794 21.75 18.3978 21.75 18V5.25C21.75 5.05109 21.671 4.86032 21.5303 4.71967C21.3897 4.57902 21.1989 4.5 21 4.5ZM12 12.4828L4.92844 6H19.0716L12 12.4828ZM9.25406 12L3.75 17.0447V6.95531L9.25406 12ZM10.3641 13.0172L11.4891 14.0531C11.6274 14.1801 11.8084 14.2506 11.9963 14.2506C12.1841 14.2506 12.3651 14.1801 12.5034 14.0531L13.6284 13.0172L19.0659 18H4.92844L10.3641 13.0172ZM14.7459 12L20.25 6.95438V17.0456L14.7459 12Z"
+                                    fill="#033256" />
+                            </svg>Omoribaby.com
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M18.75 21H14.1131C14.892 20.3045 15.6266 19.5608 16.3125 18.7734C18.8859 15.8138 20.25 12.6938 20.25 9.75C20.25 7.56196 19.3808 5.46354 17.8336 3.91637C16.2865 2.36919 14.188 1.5 12 1.5C9.81196 1.5 7.71354 2.36919 6.16637 3.91637C4.61919 5.46354 3.75 7.56196 3.75 9.75C3.75 12.6938 5.11031 15.8138 7.6875 18.7734C8.37338 19.5608 9.10795 20.3045 9.88688 21H5.25C5.05109 21 4.86032 21.079 4.71967 21.2197C4.57902 21.3603 4.5 21.5511 4.5 21.75C4.5 21.9489 4.57902 22.1397 4.71967 22.2803C4.86032 22.421 5.05109 22.5 5.25 22.5H18.75C18.9489 22.5 19.1397 22.421 19.2803 22.2803C19.421 22.1397 19.5 21.9489 19.5 21.75C19.5 21.5511 19.421 21.3603 19.2803 21.2197C19.1397 21.079 18.9489 21 18.75 21ZM5.25 9.75C5.25 7.95979 5.96116 6.2429 7.22703 4.97703C8.4929 3.71116 10.2098 3 12 3C13.7902 3 15.5071 3.71116 16.773 4.97703C18.0388 6.2429 18.75 7.95979 18.75 9.75C18.75 15.1153 13.5497 19.5938 12 20.8125C10.4503 19.5938 5.25 15.1153 5.25 9.75ZM15.75 9.75C15.75 9.00832 15.5301 8.2833 15.118 7.66661C14.706 7.04993 14.1203 6.56928 13.4351 6.28545C12.7498 6.00162 11.9958 5.92736 11.2684 6.07205C10.541 6.21675 9.8728 6.5739 9.34835 7.09835C8.8239 7.6228 8.46675 8.29098 8.32205 9.01841C8.17736 9.74584 8.25162 10.4998 8.53545 11.1851C8.81928 11.8703 9.29993 12.456 9.91661 12.868C10.5333 13.2801 11.2583 13.5 12 13.5C12.9946 13.5 13.9484 13.1049 14.6517 12.4017C15.3549 11.6984 15.75 10.7446 15.75 9.75ZM9.75 9.75C9.75 9.30499 9.88196 8.86998 10.1292 8.49997C10.3764 8.12996 10.7278 7.84157 11.139 7.67127C11.5501 7.50097 12.0025 7.45642 12.439 7.54323C12.8754 7.63005 13.2763 7.84434 13.591 8.15901C13.9057 8.47368 14.12 8.87459 14.2068 9.31105C14.2936 9.7475 14.249 10.1999 14.0787 10.611C13.9084 11.0222 13.62 11.3736 13.25 11.6208C12.88 11.868 12.445 12 12 12C11.4033 12 10.831 11.7629 10.409 11.341C9.98705 10.919 9.75 10.3467 9.75 9.75Z"
+                                    fill="#033256" />
+                            </svg>
+                            Tầng 2, số 134 ngõ 136 Tây Sơn, Q. Đống Đa, Hà Nội
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-ft">
+                    <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMetaVietnam&tabs&width=300&height=130&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                        width="100%" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    </iframe>
+                </div>
+            </div>
+            <div class="wrap-ft">
+                <div class="left-ft">
+                    <div class="flex-link">
+                        <div class="item">
+                            <h4 class="title">VỀ Omori</h4>
+                            <ul>
+                                <li><a href="">Về chúng tôi</a></li>
+                                <li><a href="">Câu chuyện thương hiệu</a></li>
+                                <li><a href="">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="item cols-2">
+                            <h4 class="title">CHÍNH SÁCH</h4>
+                            <ul>
+                                <li><a href="">Chính sách và giao nhận thanh toán</a></li>
+                                <li><a href="">Chính sách bảo mật thông tin cá nhân</a></li>
+                                <li><a href="">Điều khoản sử dụng</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">Chính sách và quy định chung</a></li>
+                                <li><a href="">Khách hàng thân thiết</a></li>
+                                <li><a href="">Chính sách vận chuyển</a></li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <div class="social">
+                                <h4 class="title">Kết nối</h4>
+                                <ul>
+                                    <li><a href=""><img src="images/ic-facebook.svg" alt="" /></a></li>
+                                    <li><a href=""><img src="images/zalo.svg" alt="" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End-->
+    <button class="backToTopBtn"></button>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/common.js"></script>
+    
+<script>
+    $(document).ready(function () {
+        $("body").addClass("homepage");
+    });
+    const milkSwiper = new Swiper('.milk-swiper', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+        speed: 800,
+    });
+    const awardsSwiper = new Swiper(".awardsSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: ".awards-slider .swiper-button-next",
+            prevEl: ".awards-slider .swiper-button-prev",
+        },
+        breakpoints: {
+            992: { slidesPerView: 6 },
+            768: { slidesPerView: 5 },
+            480: { slidesPerView: 3 },
+        },
+    });
+
+</script>
+
+    
+</body>
+
+</html>
