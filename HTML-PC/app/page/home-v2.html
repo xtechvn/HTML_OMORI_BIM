@@ -326,6 +326,85 @@
         <div class="decor-flower"></div>
     </div>
 </section>
+<section class="testimonial">
+    <h2 class="title-section">Các bậc cha mẹ nói gì?</h2>
+    <div class="container">
+
+        <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="author-info">
+                            <img src="images/ab3.png" alt="Cody Fisher" />
+                            <div>
+                                <h4>Cody Fisher</h4>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+
+                        <div class="product-box">
+                            <div class="product-thumb">
+                                <img src="images/product.png" alt="Tã quần OMORI" />
+                            </div>
+                            <div class="product-info">
+                                <p class="title">Tã quần OMORI...</p>
+                                <p class="price">275.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-image">
+                        <img src="images/ab1.png" alt="Mẹ và bé" />
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="author-info">
+                            <img src="images/ab3.png" alt="Jane Cooper" />
+                            <div>
+                                <h4>Jane Cooper</h4>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+
+                        <p>
+                            Sản phẩm tuyệt vời, mềm mại và an toàn cho bé. Tôi rất hài lòng với chất lượng của OMORI!
+                        </p>
+
+                        <div class="product-box">
+                            <div class="product-thumb">
+                                <img src="images/product.png" alt="Tã dán OMORI" />
+                            </div>
+                            <div class="product-info">
+                                <p class="title">Tã dán OMORI...</p>
+                                <p class="price">295.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-image">
+                        <img src="images/ab1.png" alt="Mẹ và bé" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+
 
 <section class="section-news-home">
     <div class="container">
@@ -424,6 +503,24 @@
             768: { slidesPerView: 5 },
             480: { slidesPerView: 3 },
         },
+    });
+    const testimonialSwiper = new Swiper(".testimonial-swiper", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".testimonial-swiper .swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".testimonial .swiper-button-next",
+            prevEl: ".testimonial .swiper-button-prev",
+        },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        speed: 700,
     });
 
 </script>

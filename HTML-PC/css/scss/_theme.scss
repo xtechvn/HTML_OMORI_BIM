@@ -4295,7 +4295,7 @@
 
             svg {
                 &:first-child {
-                     position: relative;
+                    position: relative;
                     left: 60px;
                     top: -60px;
                 }
@@ -4324,5 +4324,160 @@
             right: 10px;
             bottom: 10px;
         }
+    }
+}
+
+.testimonial {
+    background: #f1f5f9;
+    padding: 60px 0;
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+
+    .title-section {
+        text-align: center;
+        color: #01072b;
+        font-weight: 700;
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .testimonial-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(246.1deg, #FFFFFF 11.31%, #E5C7A6 86.71%);
+
+        border-radius: 20px;
+        padding: 40px;
+        gap: 40px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            padding: 20px;
+        }
+    }
+
+    .testimonial-content {
+        flex: 1;
+
+        .author-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+
+            img {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                margin-right: 12px;
+                flex-shrink: 0;
+            }
+
+            h4 {
+                color: #033256;
+                font-size: 16px;
+
+                font-weight: 700;
+            }
+
+            .stars {
+                color: #f7a33b;
+                font-size: 14px;
+            }
+        }
+
+        p {
+            color: #033256;
+            font-size: 16px;
+            line-height: 160%;
+            margin-bottom: 20px;
+        }
+
+        .product-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #fff;
+            border-radius: 12px;
+            padding: 10px 14px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            width: fit-content;
+
+            .product-thumb img {
+                width: 50px;
+                height: 50px;
+                border-radius: 8px;
+                object-fit: cover;
+                flex-shrink: 0;
+
+            }
+
+            .title {
+                font-size: 14px;
+                color: #01072b;
+                margin-bottom: 0;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+
+            }
+
+            .price {
+                font-size: 14px;
+                color: #e99c85;
+                margin-bottom: 0;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .testimonial-image {
+        max-width: 400px;
+
+        img {
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        transition: all 0.3s ease;
+        padding: 0;
+
+        &::after {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        &:hover {}
+    }
+
+    .swiper-button-prev {
+        left: 0px;
+        content: url('data:image/svg+xml,<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6"><rect x="48" width="48" height="48" rx="24" transform="rotate(90 48 0)" fill="%231B2950" fill-opacity="0.3"/><path d="M27.334 17.3335L20.6673 24.0002L27.334 30.6668" stroke="%231B2950" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/></g></svg>');
+    }
+
+    .swiper-button-next {
+        right: 0px;
+        content: url('data:image/svg+xml,<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6"><rect y="48" width="48" height="48" rx="24" transform="rotate(-90 0 48)" fill="%231B2950" fill-opacity="0.3"/><path d="M20.666 30.6665L27.3327 23.9998L20.666 17.3332" stroke="%231B2950" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/></g></svg>');
+    }
+
+    .swiper-pagination-bullet {
+        background: #fff;
+        opacity: 1;
+        width: 8px;
+        height: 8px;
+        margin: 0 2px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #B37B54;
+        width: 25px;
     }
 }
